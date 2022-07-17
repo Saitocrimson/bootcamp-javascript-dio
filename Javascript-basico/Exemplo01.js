@@ -1,7 +1,7 @@
 function returnEvenValues(array)
 {
   let num=[];
-  for(var i = 0; i<array.length;)
+  for(var i = 0; i<array.length; i++)
   {
     
     if  (array[i] % 2 ===0)
