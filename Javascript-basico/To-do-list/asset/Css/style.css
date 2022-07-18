@@ -1,0 +1,74 @@
+body {
+  display: flex ;
+    font-size: 15pt;
+    background-color:black;
+    color:white;
+    align-items:center;
+    justify-content: center;
+   flex-direction:column ;
+}
+
+
+h1 {
+  font-size: 50px;
+  color: greenyellow;
+
+}
+.estilo-botao
+{
+  width: 100px;
+  height: 20px ;
+  border-radius:10%;
+  margin-left:20px;
+  background-color: greenyellow;
+  margin-top:130px;
+ 
+}
+.todo-lista{
+    color:greenyellow;
+   list-style: none;
+  text-decoration:none;
+}
+.chequin{
+  color:white;
+  background-color: palevioletred ;
+  font-size: 30px ;
+  
+}
+.todo{
+  display:flex;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 30px ;
+  justify-content:space-between;
+  width: 200px ;
+ 
+}
+.todos{
+  color:greenyellow;
+}
+.buton1{
+  background-color: greenyellow;
+  color: blueviolet ;
+}
+buton2{
+  width: 100px ;
+}
+.completed{
+  text-decoration: line-through;
+}
+#barra{
+  border:2px solid greenyellow;
+}
+
+  
+@media(max-width:500px)
+{
+  .estilo-botao{
+    height: 30px;
+    width: 70px ;
+  }
+  .todo{
+     align-items:right ;
+  }
+}
