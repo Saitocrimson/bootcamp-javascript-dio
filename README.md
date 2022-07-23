@@ -1,2 +1,6 @@
 # bootcamp-javascript-dio
-Repositorio de exercícios e desafios 
+Olá 👋, como está?
+Bem vindo ao meu repositorio de atividades e desafios;
+
+
+
