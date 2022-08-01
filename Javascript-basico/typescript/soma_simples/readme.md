@@ -6,5 +6,5 @@ Os seguintes comandos foram usados no cmd:
 + npm start watch
 
 Em outro terminal:
-+ tsc --init//apenas se não ter o tsconfig.ts
++ tsc --init //apenas se não existir o tsconfig.ts
 + npm run watch
