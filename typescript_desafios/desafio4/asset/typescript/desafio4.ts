@@ -32,7 +32,7 @@ searchButton?.addEventListener('click', async () => {
   }
   let query:any;
   query = document.getElementById('search') as HTMLInputElement;
-  let listaDeFilmes:any= [await procurarFilme(query)];
+  let listaDeFilmes:any= await procurarFilme(query.value);
   let ul = document.createElement('ul');
   ul.id = "lista";
  for (const item of listaDeFilmes.results) {
@@ -81,7 +81,6 @@ class HttpClient {
       body?: any;
     }) {
     return new Promise((resolve, reject) => {
-
       let request = new XMLHttpRequest();
       request.open(method, url, true);
 
@@ -106,10 +105,11 @@ class HttpClient {
         
         request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         
+        body= JSON.stringify(body);
+        
       }
       
       request.send(body);
-      body= JSON.stringify(body);
     })
   }
 }
