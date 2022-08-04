@@ -42,7 +42,7 @@ searchButton === null || searchButton === void 0 ? void 0 : searchButton.addEven
     }
     let query;
     query = document.getElementById('search');
-    let listaDeFilmes = [yield procurarFilme(query)];
+    let listaDeFilmes = yield procurarFilme(query.value);
     let ul = document.createElement('ul');
     ul.id = "lista";
     for (const item of listaDeFilmes.results) {
@@ -98,9 +98,9 @@ class HttpClient {
                 };
                 if (body) {
                     request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                    body = JSON.stringify(body);
                 }
                 request.send(body);
-                body = JSON.stringify(body);
             });
         });
     }
